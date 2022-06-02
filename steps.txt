@@ -1,0 +1,21 @@
+> https://reactnative.dev/docs/environment-setup 
+
+> https://excalidraw.com/
+> https://opentdb.com/browse.php
+> https://coolors.co/
+> https://storyset.com/
+> https://reactnavigation.org/
+    npm install @react-navigation/native
+    npm install react-native-screens react-native-safe-area-context 
+
+> https://reactnavigation.org/docs/stack-navigator/
+    npm install @react-navigation/stack
+
+
+
+1. start android emulator
+2. run metro in one terminal
+3. git in 2nd terminal
+    link repository to local project
+    push changes to the repository
+4. run npx react-native run-android in 3rd terminal
