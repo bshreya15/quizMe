@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const Quiz = () => {
+const Quiz = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>quiz question one</Text>
@@ -26,6 +26,9 @@ const Quiz = () => {
         <TouchableOpacity>
           <Text>NEXT</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Result')}>
+          <Text>END</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -35,20 +38,21 @@ export default Quiz;
 
 const styles = StyleSheet.create({
   container: {
-    padding:12,
+    padding: 12,
     height: '100%',
+    backgroundColor:'white',
   },
   top: {
     marginVertical: 16,
   },
   options: {
     marginVertical: 16,
-    flex:1
+    flex: 1,
   },
-button:{
-  marginBottom:12,
-  paddingVertical:16,
-  justifyContent:'space-between',
-  flexDirection:'row',
-}
+  button: {
+    marginBottom: 12,
+    paddingVertical: 16,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+  },
 });
