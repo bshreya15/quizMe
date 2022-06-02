@@ -14,8 +14,16 @@ function MyStack() {
         component={Home}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="Quiz" component={Quiz} />
-      <Stack.Screen name="Result" component={Result} />
+      <Stack.Screen
+        name="Quiz"
+        component={Quiz}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Result"
+        component={Result}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 }
