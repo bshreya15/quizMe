@@ -15,8 +15,10 @@ const Home = ({navigation}) => {
           resizeMode="contain"
         />
       </View>
-      <TouchableOpacity onPress={() => navigation.navigate('Quiz')} style={styles.button}>
-        <Text style={styles.buttonText}>START</Text>
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Quiz')}
+        style={styles.button}>
+        <Text style={styles.buttonText}>Start</Text>
       </TouchableOpacity>
     </View>
   );
@@ -25,29 +27,32 @@ const Home = ({navigation}) => {
 export default Home;
 
 const styles = StyleSheet.create({
-  container: {paddingTop: 40, paddingHorizontal: 20, backgroundColor: 'white'},
+  container: {
+    padding: 10,
+    height: '100%',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+  },
   bannerContainer: {
-    marginTop: 50,
     justifyContent: 'center',
     alignItems: 'center',
+    flex: 1,
   },
   banner: {
     height: 300,
     width: 300,
   },
-  button:{
-    width:'100%',
-    backgroundColor:'#cc92c2',
-    marginTop:50,
-    padding:10,
-    borderRadius:16,
-    justifyContent: 'center',
+  button: {
+    width: '80%',
+    backgroundColor: '#cc92c2',
+    marginBottom: 100,
+    padding: 10,
+    borderRadius: 16,
     alignItems: 'center',
   },
-  buttonText:{
-    color:'#fff',
-    borderRadius:16,
+  buttonText: {
+    color: '#fff',
     fontSize: 26,
-    fontWeight: '1400',
-  }
+    fontWeight: '500',
+  },
 });

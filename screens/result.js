@@ -3,7 +3,7 @@ import React from 'react';
 
 const Result = ({navigation}) => {
   return (
-    <View>
+    <View style={styles.container}>
       <View>
         <Text>Result</Text>
       </View>
@@ -28,6 +28,13 @@ const Result = ({navigation}) => {
 export default Result;
 
 const styles = StyleSheet.create({
+  container: {
+    padding: 40,
+    paddingHorizontal:20,
+    height: '100%',
+    backgroundColor: 'white',
+    alignItems: 'center',
+  },
   bannerContainer: {
     justifyContent: 'center',
     alignItems: 'center',
